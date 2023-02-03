@@ -4,40 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>세인 와디즈</title>
+    <title>세인 와디즈 로그인</title>
     <style>
     </style>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="wadiz-login-clone.css">
+    <link rel="shortcut icon" href="https://static.wadiz.kr/assets/icon/favicon.ico">
 </head>
 <body>
-    <div>
+    <div id="page-container">
         <div id="wz-header">
             <div class="web-header">
                 <div class="header-wrapper">
-                    <div class="header-container">
-                        <div class="wadiz">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="85" height="25" viewBox="0 0 85 25"><path fill="#1D2129" fill-rule="nonzero" d="M58.49 2.23h2.11v21.29H59a1.73 1.73 0 0 1-1.62-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29 7.65 7.65 0 0 1 12.79-5.07V4.23a2 2 0 0 1 2-2zm-6.3 18.62a4.36 4.36 0 0 0 4.16-4.52 4.19 4.19 0 1 0-8.35 0 4.36 4.36 0 0 0 4.19 4.52zM42 23.52h-1.52a1.73 1.73 0 0 1-1.64-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29A7.65 7.65 0 0 1 38 10.72a2 2 0 0 1 1.9-1.79H42v14.59zm-8.41-2.67h.02a4.35 4.35 0 0 0 4.15-4.52 4.35 4.35 0 0 0-4.17-4.51 4.35 4.35 0 0 0-4.17 4.51 4.36 4.36 0 0 0 4.17 4.52zM83.47 8.94v2.11l-7.07 9.06h7.06v3.47h-13v-2.1l7.08-9.07h-6.62v-1.47a2 2 0 0 1 2-2h10.55zM65.86 7.3a2.48 2.48 0 1 1 0-4.96 2.48 2.48 0 0 1 0 4.96zM21.21 8.94h4.14l-4.86 14.59h-4.15l-3.21-9.36-3.21 9.36H5.77L.92 8.94h4.13L8 18l2.5-7.74a2 2 0 0 1 1.86-1.34h2.9l3 9.08 2.95-9.06zm42.65 14.59l-.04-12.59a2 2 0 0 1 2-2h2.11v14.59h-4.07z"></path></svg>
+                    <header class="header-container">
+                        <div class="wadiz-label">
+                            <a href="/">
+                                <span class="label"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="85" height="25" viewBox="0 0 85 25">
+                                <path class="path" fill="#1D2129" fill-rule="nonzero" d="M58.49 2.23h2.11v21.29H59a1.73 1.73 0 0 1-1.62-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29 7.65 7.65 0 0 1 12.79-5.07V4.23a2 2 0 0 1 2-2zm-6.3 18.62a4.36 4.36 0 0 0 4.16-4.52 4.19 4.19 0 1 0-8.35 0 4.36 4.36 0 0 0 4.19 4.52zM42 23.52h-1.52a1.73 1.73 0 0 1-1.64-1.16 9 9 0 0 1-10.93-.28 7.48 7.48 0 0 1-2.75-6.29A7.65 7.65 0 0 1 38 10.72a2 2 0 0 1 1.9-1.79H42v14.59zm-8.41-2.67h.02a4.35 4.35 0 0 0 4.15-4.52 4.35 4.35 0 0 0-4.17-4.51 4.35 4.35 0 0 0-4.17 4.51 4.36 4.36 0 0 0 4.17 4.52zM83.47 8.94v2.11l-7.07 9.06h7.06v3.47h-13v-2.1l7.08-9.07h-6.62v-1.47a2 2 0 0 1 2-2h10.55zM65.86 7.3a2.48 2.48 0 1 1 0-4.96 2.48 2.48 0 0 1 0 4.96zM21.21 8.94h4.14l-4.86 14.59h-4.15l-3.21-9.36-3.21 9.36H5.77L.92 8.94h4.13L8 18l2.5-7.74a2 2 0 0 1 1.86-1.34h2.9l3 9.08 2.95-9.06zm42.65 14.59l-.04-12.59a2 2 0 0 1 2-2h2.11v14.59h-4.07z"></path></svg>
+                            </a>
                     </div>
 
                         <ul class="gnb-large">
-                        <li class="login"><span>로그인</span></li>
-                        <li class="signup"><span>회원가입</span></li>
-                    </ul>
+                            <li class="login">
+                                <a href="https://www.wadiz.kr/web/waccount/wAccountLogin">
+                                    <span>로그인</span>
+                                </a>
+                            </li>
+                            <li class="signup">
+                                <a href="https://www.wadiz.kr/web/waccount/wAccountRegistIntro/" class="item">
+                                    <span>회원가입</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </header>
                 </div>
                 </div>
-         </div> <!-- header  -->
+            </div>  <!-- header / wz-header -->
 
-        <div class="account-intro-login"> <!-- login -->
+        <main class="account-intro-login"> <!-- login -->
+            <div class="wz-container">
             <div class="user-sign-container">
-            <h2 class="wz-text-display">로그인</h2>
+            <h2 class="wz-text-display2">로그인</h2>
                 <form name="frm_login">
                 <div class="field">
                     <div class="wz-input">
                         <input type="email" id="userName" name="userName" placeholder="이메일 입력" title="이메일 입력">
                     </div>
+                    <p id="emailError">
+                    </p>
                 </div>
                 <div class="field">
                     <div class="wz-input">
@@ -51,25 +69,22 @@
                 </form>
 
                 <div class="iam-account-app"> <!--SNS 사이트를 통한 로그인 -->
-                    <div id="chat"><img src="chat.png"></div>
-                    <button id="kakao" class ="loginbutton">카카오톡으로 시작하기</button>
+                    <button class="kakaobutton"><span><span class="Button_children__weH0H"><svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1YH1P SNSButtonList_kakaoIcon__1s6gw" aria-hidden="true"><path d="M16 4.64c-6.96 0-12.64 4.48-12.64 10.08 0 3.52 2.32 6.64 5.76 8.48l-.96 4.96 5.44-3.6 2.4.16c6.96 0 12.64-4.48 12.64-10.08S22.96 4.56 16 4.64z"></path></svg>카카오로 시작하기</span></span></button>
                     <div id="naverlogo"><img src="naver.png"></div>
                     <button id="naver" class ="loginbutton">네이버로 시작하기</button>
                     <div class="snsbuttoncircle">
                     <button id="google">
                     <span class="google">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><defs><path id="a" d="M0 0h348v46H0z"></path></defs><g fill="none" fill-rule="evenodd"><g transform="translate(-16 -13)"><use></use><path stroke="#DADCE0" d="M-.5-.5h349v47H-.5z"></path></g><path fill="#4285F4" d="M18.64 10.205c0-.639-.057-1.252-.164-1.841H10v3.481h4.844a4.14 4.14 0 0 1-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z"></path><path fill="#34A853" d="M10 19c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H1.957v2.332A8.997 8.997 0 0 0 10 19z"></path><path fill="#FBBC05" d="M4.964 11.71A5.41 5.41 0 0 1 4.682 10c0-.593.102-1.17.282-1.71V5.958H1.957A8.996 8.996 0 0 0 1 10c0 1.452.348 2.827.957 4.042l3.007-2.332z"></path><path fill="#EA4335" d="M10 4.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C14.463 1.891 12.426 1 10 1a8.997 8.997 0 0 0-8.043 4.958L4.964 8.29C5.672 6.163 7.656 4.58 10 4.58z"></path><path d="M0 0h20v20H0z"></path></g></svg>
-
                     </span></button>
                     <button id="facebook">
                     <span class="facebook">
-                        <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__1YH1P" aria-hidden="true"><path d="M14.4 19.547h5.673v-5.256a8.559 8.559 0 0 1 2.4-6.132c2.618-2.628 6.109-2.3 11.127-1.861v5.913h-3.71a3.374 3.374 0 0 0-2.29.766 3.514 3.514 0 0 0-.655 2.3v4.27h6.437l-.873 6.57h-5.564V43.2h-6.872V26.118H14.4v-6.57z"></path></svg>
-
+                        <svg viewBox="0 0 48 48" focusable="false" role="presentation" class="withIcon_icon__1YH1P" aria-hidden="true"><path d="M14.4 19.547h5.673v-5.256a8.559 8.559 0 0 1 2.4-6.132c2.618-2.628 6.109-2.3 11.127-1.861v5.913h-3.71a3.374 3.374 0 0 0-2.29.766 3.514 3.514 0 0 0-.655 2.3v4.27h6.437l-.873 6.57h-5.564V43.2h-6.872V26.118H14.4v-6.57z"
+                             style="width:8px; height:15.5px"></path></svg>
                     </span></button>
                     <button id="apple">
                     <span class="apple">
                         <svg viewBox="0 0 32 32" focusable="false" role="presentation" class="withIcon_icon__1YH1P" aria-hidden="true"><path d="M24.96 26c-1.12 1.68-2.32 3.28-4.08 3.28s-2.32-1.04-4.4-1.04-2.64 1.04-4.4 1.12S9.04 27.6 7.92 26c-2.32-3.28-4-9.36-1.68-13.44 1.098-1.973 3.148-3.299 5.512-3.36 1.688 0 3.368 1.12 4.408 1.12s3.04-1.44 5.12-1.2a6.157 6.157 0 0 1 4.867 2.62c-1.691 1.087-2.82 2.936-2.867 5.053a5.926 5.926 0 0 0 3.562 5.352 13.472 13.472 0 0 1-1.913 3.901zm-7.6-21.36a6.072 6.072 0 0 1 3.894-1.998c.038.139.045.303.045.469 0 1.44-.521 2.759-1.386 3.777A4.871 4.871 0 0 1 16.04 8.8h-.042a6.886 6.886 0 0 1-.016-.451 5.66 5.66 0 0 1 1.384-3.716z"></path></svg>
-
                     </span></button></div>
                         </div>
                     </div>
@@ -83,8 +98,7 @@
                     </p>
                 </div>
 
-            </div> <!-- login -->
+            </main> <!-- login -->
     </div>
-</div>
 </body>
 </html>
